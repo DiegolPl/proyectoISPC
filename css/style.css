@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    /* color: #D6CDA4; */
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    /* background-color: #3D8361; */
+    background-image: linear-gradient(45deg, #1C6758 30%, #3D8361 55%);
+}
+
+/*  --------------------------- NAV ---------------------------  */
+
+header {
+    width: 100%;
+    min-height: 8vh;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    /* background-color: #1C6758; */
+    background-color: #D6CDA4;
+    text-transform: uppercase;
+    color: #1C6758;
+}
+
+.logo {
+    cursor: none;
+}
+
+.links {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.links a {
+    color: #1C6758;
+    font-weight: 500;
+}
+
+.links a:hover {
+    color: #EEF2E6;
+}
+
+/*  --------------------------- SECTION 1 ---------------------------  */
+main {
+    width: 100%;
+    padding: 3rem 5rem;
+    color: #EEF2E6;
+}
+
+main > section {
+    border-bottom: 1px solid #D6CDA4;
+}
+
+#inicio {
+    scroll-margin-top: 8vh;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#inicio h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#inicio h2 {
+    font-size: 2.8rem;
+    font-variant: small-caps;
+}
+
+#inicio p {
+    line-height: 1.5;
+}
+
+#inicio section.lado-derecho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 16rem;
+    height: 18rem;
+    background-color: #EEF2E6;
+    border-radius: 1rem;
+    /* box-shadow: .5rem .5rem .5rem #1C6758; */
+    /* pointer-events: none; */
+    transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: .5rem .4rem .6rem #3D8361;
+}
+
+img.card-img {
+    width: 16rem;
+    height: 11rem;
+    object-fit: cover;
+    object-position: 5% 50%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-body {
+    padding: 1rem;
+    font-size: .9rem;
+    color: #1C6758;
+}
+
+/*  --------------------------- SECTION 1 ---------------------------  */
+
+#resumen {
+    scroll-margin-top: 14vh;
+    min-height: 100vh;
+    margin-bottom: 3rem;
+}
+
+#resumen h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#resumen p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/*  --------------------------- SECTION 2 ---------------------------  */
+
+#caracteristicas {
+    scroll-margin-top: 14vh;
+    min-height: 100vh;
+    border: none;
+}
+
+#caracteristicas h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#caracteristicas li {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+footer {
+    text-transform: uppercase;
+    height: 8vh;
+    display: grid;
+    place-items: center;
+    background-color: #D6CDA4;
+    color: #1C6758;
+}
